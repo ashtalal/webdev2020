@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Storage</title>
+</head>
+<body>
+
+	<div id="name"></div>
+	<script>
+		/*
+		if (typeof(Storage) !== "undefined") {
+		//Store item
+		localStorage.setItem('name','John Doe');
+
+		//remove item
+		//localStorage.removeItem('name');
+
+		//get item
+		console.log(localStorage.getItem('name'));
+
+		if (localStorage.name) {
+			document.getElementById('name').innerHTML=localStorage.getItem('name');
+		} else{
+			document.getElementById('name').innerHTML='No name found';
+		}
+		} else {
+			console.log('localStorage Not Available');
+		}
+		*/
+
+		if (typeof(Storage) !== "undefined") {
+		//Store item
+		sessionStorage.setItem('name','Kathryn Bernardo');
+
+		//remove item
+		//localStorage.removeItem('name');
+
+		//get item
+		console.log(sessionStorage.getItem('name'));
+
+		if (sessionStorage.name) {
+			document.getElementById('name').innerHTML=sessionStorage.getItem('name');
+		} else{
+			document.getElementById('name').innerHTML='No name found';
+		}
+		} else {
+			console.log('sessionStorage Not Available')
+
+		}
+	</script>
+</body>
+</html>
