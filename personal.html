@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal</title>
+	<script type="text/javascript">
+		function revealMessage(){
+			document.getElementById('hiddenMessage').style.display = 'block';
+		}
+
+		function countDown(){
+			var currentNumber = document.getElementById('countDown').innerHTML;
+			var newNumber = 0;
+
+			if (currentNumber > 0) {
+				newNumber = currentNumber - 1
+			} 
+
+			document.getElementById('countDown').innerHTML = newNumber;
+		}
+	</script>
+</head>
+<body>
+	<h1>Mema</h1>
+	<section>
+		<button type="button" onclick="revealMessage()">Hey</button>
+		<p id="hiddenMessage" style="display: none;">Ganda Mo</p>
+		<button type="button" id="countDown" onclick="countDown()">10</button>
+	</section>
+
+</body>
+</html>
